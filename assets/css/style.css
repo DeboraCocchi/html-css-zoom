@@ -8,6 +8,10 @@
   display: flex;
 }
 
+.active i{
+  color:rgb(77,120,31);
+}
+
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -29,7 +33,7 @@ header{
 
 
 .head-icons span{
-  color:white;
+  color:rgb(152,152,152);
   background-color: rgba(0,0,0,0.5);
   border-radius:5px;
   padding:3px 6px;
@@ -50,12 +54,74 @@ main{
   padding:55px 85px;
 }
 
+main .cards-container.d-flex{
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+main .card{
+  position: relative;
+  padding:3px;
+}
+
+main .card img{
+  width:100%;
+}
+
+
+
+main .card>.user-details{
+  background-color: rgba(0,0,0,0.5);
+  color: rgb(152,152,152);
+  font-size:80%;
+  position: absolute;
+  left:3px;
+  bottom:6px;
+  padding:3px 8px;
+
+}
+
+
+
+
+/* FOOTER */
 
 footer{
-  background-color: blueviolet;
+  background-color:rgb(27,27,27);
   height:100px;
+}
+
+footer i:not(.fa-chevron-up){
+  font-size:180%;
+}
+
+footer .fa-chevron-up{
+  font-size:90%;
 }
 
 .foot-icons.d-flex{
   justify-content: space-between;
+  align-items: center;
+  color: rgb(152,152,152);
+  height:100%;
+  padding: 10px 20px;
+}
+
+.icons-audio-video span, .icons-manage-room span{
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-right:15px;
+}
+
+.btn-end-meeting{
+  color:red;
+  border:none;
+  padding:30px;
+  background-color: rgba(48,48,48);
+}
+
+.btn-end-meeting:hover{
+  text-decoration: underline;
+  background-color: rgb(71, 70, 70);
 }
