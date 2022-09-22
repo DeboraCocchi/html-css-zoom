@@ -19,7 +19,7 @@ body{
 header{
   height:50px;
   width:100%;
-  background-color: blue;
+  background-color: black;
   color:white;
   padding:5px 20px;
 
@@ -33,7 +33,7 @@ header{
 
 
 .head-icons span{
-  color:rgb(152,152,152);
+  color:rgb(255,255,255);
   background-color: rgba(0,0,0,0.5);
   border-radius:5px;
   padding:3px 6px;
@@ -46,9 +46,9 @@ header{
 /* MAIN */
 
 main{
-  height: calc(100vh - 150px);
+  height: calc(94vh - 50px);
   width:100%;
-  background-color: darkslategrey;
+  background-color: black;
   overflow-y: auto;
   overflow-x: hidden;
   padding:55px 85px;
@@ -62,6 +62,9 @@ main .cards-container.d-flex{
 main .card{
   position: relative;
   padding:3px;
+
+  width: 20vw;
+  height: auto;
 }
 
 main .card img{
@@ -72,7 +75,7 @@ main .card img{
 
 main .card>.user-details{
   background-color: rgba(0,0,0,0.5);
-  color: rgb(152,152,152);
+  color: rgb(255,255,255);
   font-size:80%;
   position: absolute;
   left:3px;
@@ -88,11 +91,16 @@ main .card>.user-details{
 
 footer{
   background-color:rgb(27,27,27);
-  height:100px;
+  width:100%;
+  min-height:50px;
+  position:fixed;
+  bottom:0;
+  left:0;
+  z-index: 999;
 }
 
 footer i:not(.fa-chevron-up){
-  font-size:180%;
+  font-size:150%;
 }
 
 footer .fa-chevron-up{
@@ -102,9 +110,9 @@ footer .fa-chevron-up{
 .foot-icons.d-flex{
   justify-content: space-between;
   align-items: center;
-  color: rgb(152,152,152);
+  color: rgb(255,255,255);
   height:100%;
-  padding: 10px 20px;
+  padding: 1vh 2vw;
 }
 
 .icons-audio-video span, .icons-manage-room span{
