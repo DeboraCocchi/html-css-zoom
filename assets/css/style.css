@@ -110,6 +110,10 @@ footer span:hover{
   cursor: pointer;
 }
 
+footer span:active i{
+  color:#4bc800;
+}
+
 .foot-icons.d-flex{
   justify-content: space-between;
   align-items: center;
